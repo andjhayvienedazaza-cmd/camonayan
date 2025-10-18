@@ -85,8 +85,7 @@
   <header>Lesson 1: Cascading Style Sheet (CSS)</header>
 
   <div class="content">
-    <img src="css-lesson.jpg" alt="Cascading Style Sheet">
-
+    
     <h2>Cascading Style Sheet (CSS)</h2>
 
     <h3>What is CSS?</h3>
@@ -170,3 +169,4 @@
   </div>
 </body>
 </html>
+
