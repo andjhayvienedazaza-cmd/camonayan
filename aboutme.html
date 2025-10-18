@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      margin-top: 40px;
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #66a6ff;
+      display: block;
+      margin: 0 auto 15px;
+      transition: transform 0.4s ease;
+    }
+
+    .profile-pic:hover {
+      transform: rotate(8deg) scale(1.05);
+    }
+
+    h2, h3 {
+      color: #333;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .section {
+      margin-top: 40px;
+    }
+
+    .section h3 {
+      border-left: 5px solid #66a6ff;
+      padding-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .gallery img, .gallery video {
+      width: 220px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery img:hover, .gallery video:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      text-decoration: none;
+      background: #66a6ff;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 30px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    a:hover {
+      background: #5585ff;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin: 40px 0 20px;
+      color: #fff;
+      font-size: 0.9rem;
+      opacity: 0.8;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .gallery img, .gallery video {
+        width: 100%;
+        height: auto;
+      }
+
+      .card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header> About Me </header>
+
+  <div class="card">
+    <img src="profile.jp	g" alt="Profile" class="profile-pic" />
+    <h2>Hello! I'm Andjhay Viene M. Camonayan</h2>
+    <p>
+      I'm 14 years old (January 24, 2011 is my birthday.) My favorite color is dark blue and my favorite food is shawarma for now. I am a very social person. I enjoy exploring new ideas especially in technologies and in life.
+    </p>
+
+    <div class="section">
+      <h3>My Family</h3>
+      <p>
+        My family gives me strength and inspiration to do my best in everything I do.
+        They support me in my studies and dreams, and I’m very thankful for them.
+      </p>
+      <div class="gallery">
+        <img src="family.jpg" alt="My Family" />
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Hobbies & Interests</h3>
+      <p>
+        In my free time, I love to play sports and play online games, because it helps me socialize with people and sports help me build physical and mental strength.
+      </p>
+      <div class="gallery">
+                <video src="video.mp4" controls>Sports</video>
+        <img src="game.jpg" alt="Gaming" />
+      </div>
+    </div>
+  <div class="section">
+      <h3>Circle of friends</h3>
+      <p>
+        I’m thankful for my circle of friends who are always there for me. They make me laugh, help me when I’m sad, and make life more fun. I feel happy and lucky to have friends who truly care about me. Our friendship means a lot, and I will always treasure it.
+      </p>
+      <div class="gallery">
+                <img src="blkns.jpg" alt="BLKNS">
+        <img src="frind.png" alt="Blkns" />
+      </div>
+    </div>
+
+
+    <a href="index.html">← Back to Home</a>
+  </div>
+
+  <footer>POGI</footer>
+</body>
+</html>

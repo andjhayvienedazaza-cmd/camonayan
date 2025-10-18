@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 5: CSS Selectors</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #3498db;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .content {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #3498db;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+    }
+
+    ul, ol {
+      margin-left: 30px;
+      line-height: 1.7;
+    }
+
+    code {
+      background-color: #eaeaea;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    .example {
+      background-color: #f0f7ff;
+      border-left: 4px solid #3498db;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: white;
+      background-color: #3498db;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    a:hover {
+      background-color: #2874a6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lesson 5: CSS Selectors</h1>
+  </header>
+
+  <div class="content">
+    <h2>What are CSS Selectors?</h2>
+    <p>CSS selectors are used to <strong>“find” or “select”</strong> the HTML elements that you want to style.</p>
+    <p>They are divided into six main types:</p>
+
+    <ol>
+      <li>Class selector</li>
+      <li>Element (Tag) selector</li>
+      <li>ID selector</li>
+      <li>Universal selector</li>
+      <li>Group selector</li>
+      <li>Attribute selector</li>
+    </ol>
+
+    <h2>Element Selector</h2>
+    <p>Selects specific HTML elements such as <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, or <code>&lt;h1&gt;</code> and applies CSS to them.</p>
+
+    <div class="example">
+      <code>p { color: blue; }</code> → styles all paragraph elements.
+    </div>
+
+    <h2>ID Selector</h2>
+    <ul>
+      <li>Used to apply a style to <strong>one unique element</strong> on a page.</li>
+      <li>Defined by a hash symbol (<code>#</code>).</li>
+      <li>Uses the <code>id</code> attribute in HTML.</li>
+      <li>Best for unique elements like a header, footer, or navigation bar.</li>
+    </ul>
+
+    <div class="example">
+      <code>#title { font-size: 30px; color: red; }</code><br>
+      <code>&lt;h1 id="title"&gt;Welcome&lt;/h1&gt;</code>
+    </div>
+
+    <h2>Universal Selector</h2>
+    <p>The <strong>universal selector</strong> selects every single HTML element on the page.</p>
+    <div class="example">
+      <code>* { margin: 0; padding: 0; box-sizing: border-box; }</code>
+    </div>
+
+    <h2>Group Selector</h2>
+    <p>Used to select multiple elements and apply the same style to all of them at once.</p>
+    <div class="example">
+      <code>h1, h2, h3 { color: blue; }</code>
+    </div>
+
+    <h2>Attribute Selector</h2>
+    <p>Used to style elements based on specific HTML attribute values.</p>
+    <div class="example">
+      <code>input[type="text"] { background-color: yellow; }</code>
+    </div>
+
+    <h2>When to Use Each Selector</h2>
+
+    <ul>
+      <li><strong>Class Selector (.</strong>) — Use when styling multiple elements that share the same style, even if they are different tags.</li>
+      <li><strong>ID Selector (#)</strong> — Use for styling a single unique element (like a banner or footer).</li>
+      <li><strong>Element Selector</strong> — Use to style all occurrences of a specific tag (like all paragraphs or headings).</li>
+      <li><strong>Universal Selector (*)</strong> — Use when you want to apply styles to every element, such as resetting default margins or padding.</li>
+      <li><strong>Group Selector</strong> — Use when different elements share the same styling to avoid repetitive code.</li>
+      <li><strong>Attribute Selector</strong> — Use when you need to target elements based on their attributes (like input fields or links).</li>
+    </ul>
+<h3>What I Have Learned</h3>
+<p>I learned that selectors are used to target specific HTML elements. They help apply styles to certain parts of a webpage, like a paragraph, heading, or class.
+</p>
+
+
+    <a href="tle.html">← Back to Lessons</a>
+  </div>
+
+</body>
+</html>

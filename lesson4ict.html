@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 4: CSS Rule and Class Selector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #3498db;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .content {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #3498db;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      margin-left: 30px;
+    }
+
+    code {
+      background-color: #eaeaea;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: white;
+      background-color: #3498db;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    a:hover {
+      background-color: #2874a6;
+    }
+
+    .example {
+      background-color: #f0f7ff;
+      border-left: 4px solid #3498db;
+      padding: 10px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lesson 4: CSS Rule and Class Selector</h1>
+  </header>
+
+  <div class="content">
+    <h2>CSS Rule</h2>
+    <p>A CSS rule has two main parts: a <strong>selector</strong> and one or more <strong>style declarations</strong>.</p>
+
+    <p>The basic format of a CSS style rule is as follows:</p>
+
+    <div class="example">
+      <p><strong>For Inline Style Rule:</strong></p>
+      <code>&lt;tag style="style declaration"&gt;</code><br>
+      <code>&lt;tag style="prop1:value; prop2:value; prop3:value;"&gt;</code>
+    </div>
+
+    <div class="example">
+      <p><strong>For Document-level and External Style Sheets:</strong></p>
+      <code>selector { style declarations }</code><br>
+      <code>selector { prop1:value; prop2:value; prop3:value; }</code>
+    </div>
+
+    <h2>Style Properties</h2>
+    <p>Properties in CSS are grouped into six categories:</p>
+    <ul>
+      <li>Fonts</li>
+      <li>Colors and Backgrounds</li>
+      <li>Text</li>
+      <li>Boxes and Layout</li>
+      <li>Lists</li>
+      <li>Tag Classifications</li>
+    </ul>
+
+    <h2>Classes</h2>
+    <p><strong>What are Classes?</strong></p>
+    <ul>
+      <li>A <strong>class</strong> is a user-defined selector used to apply style rules to specific HTML tags.</li>
+      <li>They help control individual element formatting.</li>
+      <li>They are reusable and flexible, allowing multiple elements to share the same style.</li>
+      <li>Classes are defined by a dot (<code>.</code>) before the class name.</li>
+    </ul>
+
+    <h2>How to Define and Use Classes</h2>
+    <p>Two ways to write class selectors:</p>
+    <ol>
+      <li>Element followed by a dot and the class name — applies only to that specific element type.</li>
+      <li>Dot followed by a class name — can apply to any element.</li>
+    </ol>
+
+    <div class="example">
+      <code>p.golden { color: blue; }</code> → Element + class selector<br>
+      <code>.sodapop { color: red; }</code> → Class selector only
+    </div>
+
+    <p>You can apply a class to an element using the <code>class</code> attribute:</p>
+    <div class="example">
+      <code>&lt;p class="golden"&gt;This text is blue.&lt;/p&gt;</code>
+    </div>
+
+    <p><strong>Note:</strong> One element can have multiple classes, and one class can be applied to many elements.</p>
+
+    <h2>Class Selector</h2>
+    <p><strong>Element + Class Selector (element.classname):</strong> A style applied only when both the element and class match.</p>
+
+    <h3>Why Use Element + Class Selectors?</h3>
+    <ul>
+      <li><strong>Class selector (.classname):</strong> Reusable across many elements.</li>
+      <li><strong>Element + Class selector (p.classname):</strong> Gives precise control over styling a specific type of element.</li>
+    </ul>
+<h3>What I Have Learned</h3>
+<p>I learned that CSS rules are made up of a selector and a declaration block. The declarations include properties and values that define how an element should look.
+</p>
+
+    <a href="tle.html">← Back to Lessons</a>
+  </div>
+
+</body>
+</html>

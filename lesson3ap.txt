@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 3: Elastisidad</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fddb92, #d1fdff);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 30px;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .content {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      margin-top: 30px;
+      max-width: 900px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #333;
+      text-align: center;
+    }
+
+    h3 {
+      color: #ff9800;
+      margin-top: 25px;
+      border-left: 5px solid #ffcc80;
+      padding-left: 10px;
+    }
+
+    p, li {
+      color: #555;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    ul {
+      margin-left: 25px;
+      margin-top: 10px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 15px 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    a.back {
+      display: inline-block;
+      margin-top: 25px;
+      text-decoration: none;
+      background: #ff9800;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+
+    a.back:hover {
+      background: #e68900;
+    }
+  </style>
+</head>
+<body>
+  <header>Lesson 3: Elastisidad</header>
+
+  <div class="content">
+    <h2>Ano ang Elastisidad?</h2>
+    <ul>
+      <li>Paraan upang masukat ang pagtugon ng isang indibidwal sa pagbabago ng presyo.</li>
+      <li>Bahagdan ng pagbabago sa dami ng demand ayon sa bahagdan ng pagbabago ng presyo.</li>
+      <li>May limang uri ng elastisidad: <strong>Elastik, Di-elastik, Unitary, Ganap na Elastik, Ganap na Di-Elastik</strong>.</li>
+    </ul>
+
+    
+    <img src="moneygrab.jpg" alt="Elasticity Concept Image">
+
+    <h3>Elastik</h3>
+    <ul>
+      <li><strong>Coefficient:</strong> |E| > 1</li>
+      <li>Mas malaki ang pagtugon ng Quantity Demanded/Quantity Supplied kaysa sa bahagdan ng pagbabago ng presyo.</li>
+      <li><strong>Halimbawa:</strong> Mga produktong maraming kapalit o kahalili tulad ng softdrinks.</li>
+    </ul>
+
+    <h3>Di-Elastik</h3>
+    <ul>
+      <li><strong>Coefficient:</strong> |E| < 1</li>
+      <li>Maliit ang bahagdan ng pagtugon ng Qd/Qs kaysa sa bahagdan ng pagbabago ng presyo.</li>
+      <li><strong>Halimbawa:</strong> Mga pangunahing produktong walang kapalit tulad ng gamot.</li>
+    </ul>
+
+    <h3>Unitary</h3>
+    <ul>
+      <li><strong>Coefficient:</strong> |E| = 1</li>
+      <li>Pareho ang bahagdan ng pagbabago ng presyo at bahagdan ng pagbabago sa dami.</li>
+    </ul>
+
+    <h3>Ganap na Elastik</h3>
+    <ul>
+      <li><strong>Coefficient:</strong> |E| = ∞ (infinity)</li>
+      <li>Ang pagbabago sa presyo ay magdudulot ng walang hanggang pagbabago sa Qd/Qs (horizontal line).</li>
+      <li><strong>Halimbawa:</strong> Produktong handang bilhin o ibenta ng marami sa isang takdang presyo, tulad ng chocolate.</li>
+    </ul>
+
+    <h3>Ganap na Di-Elastik</h3>
+    <ul>
+      <li><strong>Coefficient:</strong> |E| = 0</li>
+      <li>Hindi nagbabago ang quantity kahit magbago ang presyo (vertical line).</li>
+    </ul>
+
+<h3>Price Elasticity Formula</h3>
+    <img src="elasticityformula.png" alt="Elasticity Graph Example">
+
+    <a href="ap.html" class="back">← Back to Lessons</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Araling Panlipunan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .lesson-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      margin: 25px;
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .lesson-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      color: #333;
+      border-left: 5px solid #6fa3ef;
+      padding-left: 10px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: none;
+      background: #6fa3ef;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 30px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .button:hover {
+      background: #5d8de0;
+      transform: scale(1.05);
+    }
+
+    .reflection {
+      background: #ffffffb8;
+      border-left: 6px solid #6fa3ef;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 900px;
+      margin: 40px 0;
+      padding: 25px 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .reflection h3 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin: 40px 0 20px;
+      color: #fff;
+      font-size: 0.9rem;
+      opacity: 0.8;
+      text-align: center;
+    }
+
+    a.back {
+      display: inline-block;
+      margin-top: 25px;
+      text-decoration: none;
+      background: #6fa3ef;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 30px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    a.back:hover {
+      background: #5d8de0;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .lesson-card, .reflection {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Araling Panlipunan Lessons</header>
+
+  <div class="lesson-card">
+    <h2>Lesson 1: Maykroekonomiks & Demand</h2>
+
+    <a href="lesson1ap.html" class="button">View Lesson</a>
+  </div>
+
+  <div class="lesson-card">
+    <h2>Lesson 2:Supply </h2>
+   
+    <a href="lesson2ap.html" class="button">View Lesson</a>
+  </div>
+
+  <div class="lesson-card">
+    <h2>Lesson 3: Elasticity </h2>
+   
+    <a href="lesson3ap.html" class="button">View Lesson</a>
+  </div>
+
+  <div class="lesson-card">
+    <h2>Lesson 4:Equilibrium </h2>
+        <a href="lesson4ap.html" class="button">View Lesson</a>
+  </div>
+
+  <div class="lesson-card">
+    <h2>Lesson 5:Market Structure </h2>
+        <a href="lesson5ap.html" class="button">View Lesson</a>
+  </div>
+
+  <div class="reflection">
+    <h3>Reflection</h3>
+    <p>Natutunan ko na ang demand, supply, elasticity, equilibrium, at market structure ay magkakaugnay sa pagtakbo ng ekonomiya. Ang demand at supply ay nagpapakita ng galaw ng presyo at dami ng produkto, habang ang elasticity ay sumusukat kung gaano ito kabilis magbago. Ang equilibrium ay nagpapakita ng balanse sa pagitan ng mamimili at nagbebenta, at ang market structure ay nagpapakita ng iba’t ibang uri ng kompetisyon sa pamilihan.
+    </p>
+  </div>
+
+  <a href="index.html" class="back">← Back to Home</a>
+
+  <footer>POGI</footer>
+</body>
+</html>

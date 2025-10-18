@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ICT Lessons</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .lesson-card {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .lesson-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    .lesson-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .lesson-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .lesson-content h3 {
+      color: #333;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .lesson-content p {
+      color: #666;
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background: #667eea;
+      padding: 8px 16px;
+      border-radius: 25px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #5567d6;
+    }
+
+    a.back-home {
+      display: inline-block;
+      margin: 40px 0;
+      text-decoration: none;
+      background: #764ba2;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 30px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    a.back-home:hover {
+      background: #5b3a84;
+      transform: scale(1.05);
+    }
+
+    footer {
+      color: #fff;
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>ICT</header>
+
+  <div class="container">
+    <div class="lesson-card">
+      
+      <div class="lesson-content">
+        <h3>Lesson 1: Cascading Style Sheet (CSS)</h3>
+     
+        <a href="lesson1ict.html" class="btn">Read More</a>
+      </div>
+    </div>
+
+    <div class="lesson-card">
+    
+      <div class="lesson-content">
+        <h3>Lesson 2: Style Sheet and Its Parts</h3>
+       
+        <a href="lesson2ict.html" class="btn">Read More</a>
+      </div>
+    </div>
+
+    <div class="lesson-card">
+      
+      <div class="lesson-content">
+        <h3>Lesson 3: Display Property</h3>
+       
+        <a href="lesson3ict.html" class="btn">Read More</a>
+      </div>
+    </div>
+
+    <div class="lesson-card">
+      
+      <div class="lesson-content">
+        <h3>Lesson 4: CSS Rule and Class Selector</h3>
+      
+        <a href="lesson4ict.html" class="btn">Read More</a>
+      </div>
+    </div>
+
+    <div class="lesson-card">
+   
+      <div class="lesson-content">
+        <h3>Lesson 5: CSS Selectors</h3>
+   
+        <a href="lesson5ict.html" class="btn">Read More</a>
+      </div>
+    </div>
+
+    <div class="lesson-card">
+ 
+      <div class="lesson-content">
+        <h3>Lesson 6: Setting Dimensions & Pseudo-Classes</h3>
+       
+        <a href="lesson6ict.html" class="btn">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-home">← Back to Home</a>
+
+  <footer>POGI</footer>
+
+</body>
+</html>

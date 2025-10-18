@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 2: Style Sheet and Its Parts</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 30px;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .content {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      margin-top: 30px;
+      max-width: 900px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .content img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #333;
+      text-align: center;
+    }
+
+    h3 {
+      color: #0066cc;
+      margin-top: 25px;
+      border-left: 5px solid #66a6ff;
+      padding-left: 10px;
+    }
+
+    p, li {
+      color: #555;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    ul {
+      margin-left: 25px;
+      margin-top: 10px;
+    }
+
+    a.back {
+      display: inline-block;
+      margin-top: 25px;
+      text-decoration: none;
+      background: #66a6ff;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+
+    a.back:hover {
+      background: #4d90fe;
+    }
+  </style>
+</head>
+<body>
+  <header>Lesson 2: Style Sheet and Its Parts</header>
+
+  <div class="content">
+    
+
+    <h2>Style Sheet and Its Parts</h2>
+
+    <h3>What is a Style Sheet?</h3>
+    <p>
+      A set of instructions to a Web browser on how to display various elements on a Web page is known as a style sheet.
+      Every CSS is a series of instructions called statements that:
+    </p>
+    <ul>
+      <li>Identify the elements in an HTML document that it affects</li>
+      <li>Tell the browser how to draw these elements</li>
+      <li>Apply to elements such as paragraphs, links, and list items</li>
+      <li>Are just text files or text embedded in the head of an HTML document that separate content from appearance</li>
+      <li>Suggest to the browser how the page should be displayed</li>
+    </ul>
+
+    <h3>How CSS is Applied</h3>
+    <ul>
+      <li><strong>Linked method:</strong> CSS is stored in a separate file, instead of directly in the HTML page.</li>
+      <li><strong>Embedded method:</strong> CSS is stored as part of the HTML page, in the header section.</li>
+      <li><strong>Inline method:</strong> CSS is stored directly in the style attributes of HTML tags.</li>
+    </ul>
+
+    <h3>Inline Style</h3>
+    <p>
+      You can define the style for a single element using the <code>style</code> attribute.
+      Various HTML tags can have the style attribute, and its value defines how that line will appear.
+    </p>
+
+    <h3>Embedded Style</h3>
+    <p>
+      Defined within the <code>&lt;style&gt;</code> tags inside the head part of an HTML file.  
+      It provides style for the entire HTML document.
+    </p>
+
+    <h3>Linked Style</h3>
+    <p>
+      Linked CSS is made outside the HTML file using the <code>&lt;link&gt;</code> element.  
+      It establishes a relationship between the HTML document and the stylesheet file.
+    </p>
+    <ul>
+      <li>Used only within the <code>&lt;head&gt;&lt;/head&gt;</code> section</li>
+      <li>The stylesheet file contains only style rules, no HTML code</li>
+    </ul>
+
+    <h3>Creating an External CSS</h3>
+    <ol>
+      <li>Open a blank document in Notepad.</li>
+      <li>Type the styles you want to define.</li>
+      <li>On the Menu Bar, click <strong>File</strong> → <strong>Save</strong>.</li>
+      <li>Type your filename with a <strong>.css</strong> extension and select <strong>All Files</strong> as the file type.</li>
+    </ol>
+
+    <h3>Linking Your CSS to an HTML File</h3>
+    <p>
+      After creating your CSS file, open your HTML file and type this inside the head section:
+    </p>
+    <p><code>&lt;link rel="stylesheet" href="linked.css" type="text/css"&gt;</code></p>
+    <p>Then save your HTML file.</p>
+
+<h3>What I Have Learned</h3>
+<p>I learned that there are three types of CSS: inline, internal, and external. Each type is used to apply styles in different ways depending on where the CSS code is written.
+</p>
+
+
+    <a href="tle.html" class="back">← Back to Lessons</a>
+  </div>
+</body>
+</html>
